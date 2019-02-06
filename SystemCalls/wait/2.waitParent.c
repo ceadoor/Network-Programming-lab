@@ -1,9 +1,9 @@
 
 /* 
     Author     : abhijithvijayan
-    Created on : 06 Feb 19, 11:00
-    title      : fork() - systemcall    
-    Aim        : To create a new child process using fork system call.
+    Created on : 06 Feb 19, 11:50
+    title      : wait() - systemcall
+    Aim        : To block a parent process until child completes using wait system call.
 */
 
 #include <stdio.h>
@@ -26,7 +26,8 @@ main()
     }
     // The return value is positive for a parent process
     else if (pId > 0)
-    {
+    {   
+        wait(NULL);
         printf("\nParent process:");
         printf("\nProcess id is %d", getpid());
         printf("\nProcess id of shell is %d\n", getppid());

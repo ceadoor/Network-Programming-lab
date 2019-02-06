@@ -1,4 +1,4 @@
-## Program for FCFS Scheduling
+## Program for fork() - systemcall
 
 [![solution](https://img.shields.io/badge/View-Solution-blue.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/blob/master/SystemCalls/fork/1.createChild.c)
 [![raw](https://img.shields.io/badge/-raw-green.svg?logo=appveyor&longCache=true&style=for-the-badge )](https://github.com/KTU-CSE/Network-Programming-lab/raw/master/SystemCalls/fork/1.createChild.c)
