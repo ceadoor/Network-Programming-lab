@@ -6,4 +6,7 @@
 
 ## Output
 
-![output_image](/.github/out_img/p_02_out.jpg)
+![output_image](/.github/out_img/p_02_out.png)
+
+### Refer: 
+- https://kutt.it/bwrS7l

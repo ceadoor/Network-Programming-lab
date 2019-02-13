@@ -6,4 +6,4 @@
 
 ## Output
 
-![output_image](/.github/out_img/p_01_out.jpg)
+![output_image](/.github/out_img/p_01_out.png)
