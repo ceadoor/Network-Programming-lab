@@ -17,6 +17,57 @@ A process can have multiple threads of execution which are executed **asynchrono
 #### Use of Threads
 Synchronous model of execution cannot be applied everywhere and hence was the requirement of asynchronous model of execution felt which is implemented by using threads.
 
+
+**Thread ID** is represented by the type ‘pthread_t’.  As we already discussed that in most of the cases this type is a structure, so there has to be a function that can compare two thread IDs.
+```
+    #include <pthread.h>
+    int pthread_equal(pthread_t tid1, pthread_t tid2);
+```
+
+So as you can see that the above function takes two thread IDs and returns nonzero value if both the thread IDs are equal or else it returns zero.
+
+Another case may arise when a thread would want to know its own thread ID. For this case the following function provides the desired service.
+```
+    #include <pthread.h>
+    pthread_t pthread_self(void);
+```
+
+### Thread Creation
+
+Normally when a program starts up and becomes a process, it starts with a default thread. So we can say that every process has at least one thread of control.  A process can create extra threads using the following function :
+
+```
+    #include <pthread.h>
+    int pthread_create(pthread_t *restrict tidp, const pthread_attr_t *restrict attr, void *(*start_rtn)(void), void *restrict arg)
+```
+
+
+- The first argument is a pthread_t type address. Once the function is called successfully, the variable whose address is passed as first argument will hold the thread ID of the newly created thread.
+- The second argument may contain certain attributes which we want the new thread to contain.  It could be priority etc.
+- The third argument is a function pointer. This is something to keep in mind that each thread starts with a function and that functions address is passed here as the third argument so that the kernel knows which function to start the thread from.
+- As the function (whose address is passed in the third argument above) may accept some arguments also so we can pass these arguments in form of a pointer to a void type. Now, why a void type was chosen? This was because if a function accepts more than one argument then this pointer could be a pointer to a structure that may contain these arguments.
+
+#### Sample Example
+https://pastebin.com/raw/tHsfjtye
+
+### pthread
+pthread_create() takes 4 arguments.
+- The first argument is a pointer to thread_id which is set by this function.
+- The second argument specifies attributes. If the value is NULL, then default attributes shall be used.
+- The third argument is name of function to be executed for the thread to be created.
+- The fourth argument is used to pass arguments to the function, myThreadFun.
+- The pthread_join() function for threads is the equivalent of wait() for processes. A call to pthread_join blocks the calling thread until the thread with identifier equal to the first argument terminates. 
+
+### Compiling
+To compile a multithreaded program using gcc, we need to link it with the pthreads library. 
+```
+    user@ubuntu:~/$ gcc multithread.c -lpthread
+```
 ## Output
 
 ![output_image](/.github/out_img/p_03_out.png)
+
+
+Refer:
+
+https://www.thegeekstuff.com/2012/04/create-threads-in-linux/
