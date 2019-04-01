@@ -61,7 +61,7 @@ pthread_create() takes 4 arguments.
 ### Compiling
 To compile a multithreaded program using gcc, we need to link it with the pthreads library. 
 ```
-    user@ubuntu:~/$ gcc multithread.c -lpthread
+    user@ubuntu:~/$ gcc 3.prime_fib_threads.c -lpthread
 ```
 ## Output
 
@@ -71,3 +71,5 @@ To compile a multithreaded program using gcc, we need to link it with the pthrea
 Refer:
 
 https://www.thegeekstuff.com/2012/04/create-threads-in-linux/
+https://www.computerhope.com/unix/usleep.htm
+http://man7.org/linux/man-pages/man3/pthread_join.3.html

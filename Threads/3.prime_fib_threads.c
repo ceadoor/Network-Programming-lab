@@ -71,13 +71,17 @@ void *primeNfib(void *arg)
 }
 
 void main()
-{   
+{
     printf("Enter the limit: ");
     scanf("%d", &limit);
     int i = 0;
-    while(i<2) {
+    while (i < 2)
+    {
         pthread_create(&(tID[i]), NULL, &primeNfib, NULL);
-        pthread_join(tID[1], NULL);
+        // pthread_join(tID[i], NULL);
+        // The sleep command is used to delay for a specified amount of time.
+        sleep(3);
         ++i;
     }
+    printf("\n");
 }
