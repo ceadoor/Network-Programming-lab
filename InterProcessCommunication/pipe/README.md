@@ -2,8 +2,8 @@
 
 # 1. Interprocess communication with pipe
 
-[![solution](https://img.shields.io/badge/View-Solution-blue.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/blob/master/InterProcessCommunication/pipe/4.pipe_message.c)
-[![raw](https://img.shields.io/badge/-raw-green.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/raw/master/InterProcessCommunication/pipe/4.pipe_message.c)
+[![solution](https://img.shields.io/badge/View-Solution-blue.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/blob/master/InterProcessCommunication/pipe/5.pipe_message.c)
+[![raw](https://img.shields.io/badge/-raw-green.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/raw/master/InterProcessCommunication/pipe/5.pipe_message.c)
 [![output](https://img.shields.io/badge/-output-ff69b4.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/blob/master/InterProcessCommunication/pipe/README.md#output1)
 
 ### Algorithm
@@ -24,8 +24,8 @@ Step 5 − Repeat step 3 and step 4 once again.
 
 # 2. Sorting using pipe() communication
 
-[![solution](https://img.shields.io/badge/View-Solution-blue.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/blob/master/InterProcessCommunication/pipe/5.pipe_sort.c)
-[![raw](https://img.shields.io/badge/-raw-green.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/raw/master/InterProcessCommunication/pipe/5.pipe_sort.c)
+[![solution](https://img.shields.io/badge/View-Solution-blue.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/blob/master/InterProcessCommunication/pipe/6.pipe_sort.c)
+[![raw](https://img.shields.io/badge/-raw-green.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/raw/master/InterProcessCommunication/pipe/6.pipe_sort.c)
 [![output](https://img.shields.io/badge/-output-ff69b4.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/blob/master/InterProcessCommunication/pipe/README.md#output2)
 
 ## Output2
