@@ -20,7 +20,7 @@ Step 5 − Repeat step 3 and step 4 once again.
 
 ## Output1
 
-![output_image](/.github/out_img/p_04_out.png)
+![output_image](/.github/out_img/p_05_out.png)
 
 # 2. Sorting using pipe() communication
 
@@ -30,7 +30,7 @@ Step 5 − Repeat step 3 and step 4 once again.
 
 ## Output2
 
-![output_image](/.github/out_img/p_05_out.png)
+![output_image](/.github/out_img/p_06_out.png)
 
 ## Theory
 

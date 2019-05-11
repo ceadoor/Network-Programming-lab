@@ -33,4 +33,4 @@ shmctl() is used. shmctl(int shmid,IPC_RMID,NULL);
 
 ## Output
 
-![output_image](/.github/out_img/p_06_out.png)
+![output_image](/.github/out_img/p_07_out.png)

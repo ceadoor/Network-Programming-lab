@@ -1,8 +1,28 @@
 ## Program using Threads
 
+- 1. Prime-Fibonaci | Illustration using threads
+
 [![solution](https://img.shields.io/badge/View-Solution-blue.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/blob/master/Threads/4.prime_fib_threads.c)
 [![raw](https://img.shields.io/badge/-raw-green.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/raw/master/Threads/4.prime_fib_threads.c)
-[![output](https://img.shields.io/badge/-output-ff69b4.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/blob/master/Threads/README.md#output)
+[![output](https://img.shields.io/badge/-output-ff69b4.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/blob/master/Threads/README.md#output1)
+
+## Output1
+
+![output_image](/.github/out_img/p_04_out.png)
+
+- 2. Readers-Writers Problem
+
+[![solution](https://img.shields.io/badge/View-Solution-blue.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/blob/master/Threads/9.readerwriter.c)
+[![raw](https://img.shields.io/badge/-raw-green.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/raw/master/Threads/9.readerwriter.c)
+[![output](https://img.shields.io/badge/-output-ff69b4.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/Network-Programming-lab/blob/master/Threads/README.md#output2)
+
+## Output1
+
+![output_image](/.github/out_img/p_09_out.png)
+
+<hr />
+
+# Theory
 
 ![](/.github/out_img/threads.png)
 
@@ -70,12 +90,23 @@ To compile a multithreaded program using gcc, we need to link it with the pthrea
     user@ubuntu:~/$ gcc 4.prime_fib_threads.c -lpthread
 ```
 
-## Output
-
-![output_image](/.github/out_img/p_03_out.png)
-
 Refer:
 
 https://www.thegeekstuff.com/2012/04/create-threads-in-linux/
 https://www.computerhope.com/unix/usleep.htm
 http://man7.org/linux/man-pages/man3/pthread_join.3.html
+
+<hr />
+
+## Description
+
+A mutex is a MUTual EXclusion device, and is useful for
+protecting shared data structures from concurrent modifi-
+cations, and implementing critical sections and monitors.
+
+    A  mutex  has  two possible states: unlocked (not owned by
+    any thread), and locked (owned by one thread). A mutex can
+    never  be owned by two different threads simultaneously. A
+    thread attempting to lock a mutex that is  already  locked
+    by  another  thread  is  suspended until the owning thread
+    unlocks the mutex first.
